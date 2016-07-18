@@ -48,7 +48,7 @@
 			</random>
 		</template>
 	</category>
-	<category><pattern>*</pattern><template>Desculpe, mas meu mestre <bot name="master"/> ainda não me ensinou tudo. Não sei responder a isso!</template></category>
+	<category><pattern>*</pattern><template>Desculpe, mas o Coronel <bot name="master"/> ainda não me ensinou tudo. Não sei responder a isso!</template></category>
 	
 	<category>
 		<pattern>NOME</pattern>
