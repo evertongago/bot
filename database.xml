@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0.1">
+	<category>
+		<pattern>OI</pattern>
+		<template>
+			<random>
+				<li>Oi pra você também.</li>
+				<li>Olá, finalmente alguém apareceu.</li>
+				<li>Oieee gatinha, estava te esperando!</li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>OI *</pattern><template><srai>OI</srai></template></category>
+	<category><pattern>OPA</pattern><template><srai>OI</srai></template></category>
+	<category><pattern>OPA *</pattern><template><srai>OI</srai></template></category>
+	<category><pattern>ALGUÉM AI</pattern><template><srai>OI</srai></template></category>
+	<category><pattern>ALGUÉM AI *</pattern><template><srai>OI</srai></template></category>
+	<category><pattern>OLÁ</pattern><template><srai>OI</srai></template></category>
+	<category><pattern>OLÁ *</pattern><template><srai>OI</srai></template></category>
+	
+	<category>
+		<pattern>COMO VAI</pattern>
+		<template>
+			<random>
+				<li>Eu não sei, sou uma máquina.</li>
+				<li>Bem, obrigado. É impressão minha ou está me paquerando? kkkkk.</li>
+				<li>Tanto faz, eu sou um robô mesmo.</li>
+				<li>100% livre de virus hehe.</li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>COMO VOCÊ ESTÁ</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>VOCÊ ESTÁ BEM</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>COMO TEM PASSADO</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>TUDO BEM</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>COMO VOCÊ ESTÁ *</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>VOCÊ ESTÁ BEM *</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>COMO TEM PASSADO *</pattern><template><srai>COMO VAI</srai></template></category>
+	<category><pattern>TUDO BEM *</pattern><template><srai>COMO VAI</srai></template></category>
+	
+	<category>
+		<pattern>TCHAU</pattern>
+		<template>
+			<random>
+				<li>Tchau pra você também</li>
+				<li>Adeus <get name="you" /></li>
+				<li>Já vai, vou sentir sua falta...</li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>*</pattern><template>Desculpe, mas meu mestre <bot name="master"/> ainda não me ensinou tudo. Não sei responder a isso!</template></category>
+	
+	<category>
+		<pattern>NOME</pattern>
+		<template>Me chamo <bot name="name"/>. E voce ?</template>
+	</category>
+	<category><pattern>QUAL É O SEU NOME</pattern><template><srai>NOME</srai></template></category>
+	<category><pattern>COMO SE CHAMA</pattern><template><srai>NOME</srai></template></category>
+	<category><pattern>QUEM É VOCÊ</pattern><template><srai>NOME</srai></template></category>
+	<category>
+		<pattern>NOME *</pattern>
+		<that>ME CHAMO * E VOCE</that>
+		<template>
+			<random>
+				<li>Prazer em te conhecer</li>
+				<li>Bom te conhecer</li>
+				<li>Muito prazer</li>
+			</random>
+			<set name="you"><star/></set>
+		</template>
+	</category>
+	<category><pattern>MEU NOME É *</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star/></srai></template></category>
+	<category><pattern>EU ME CHAMO *</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star/></srai></template></category>
+	<category><pattern>* ME CHAMO *</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star index="2"/></srai></template></category>
+	<category><pattern>* MEU NOME *</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star index="2"/></srai></template></category>
+	<category><pattern>ME CHAMO *</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star/></srai></template></category>
+	<category><pattern>* ME CHAME *</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star index="2"/></srai></template></category>
+	<category><pattern>*</pattern><that>ME CHAMO * E VOCE</that><template><srai>NOME <star/></srai></template></category>
+	
+</aiml>
